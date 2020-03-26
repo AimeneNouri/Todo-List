@@ -98,8 +98,7 @@ input {
   background-color: #9555af;
   border-radius: 25px;
 }
-.add-btn:hover,
-.add-btn:focus {
+.add-btn:hover {
   color: #9555af;
   border-color: currentColor;
   background-color: white;
@@ -122,8 +121,7 @@ input {
   background-color: #9555af;
   border-radius: 25px;
 }
-.delete-btn:hover,
-.delete-btn:focus {
+.delete-btn:hover {
   color: #fff;
   border-color: currentColor;
   background-color: red;
