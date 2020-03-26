@@ -1,14 +1,10 @@
 <template>
   <div id="todolistapp">
     <div class="container">
-      <img src="./assets/logo.png" width="75px" height="75px" />
       <h1>Todo Vue App</h1>
-      <div class="form__group field">
         <input
-          type="input" class="form__field" placeholder="Name" name="name" id="name" required
+        type="input" class="input" placeholder="Name" required
         />
-        <label for="name" class="form__label">Name</label>
-      </div>
       <button class="add-btn" @click="add()">Add Todo</button>
 
       <ul>
@@ -78,13 +74,64 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-
-.delete-btn {
-  color: black;
-  cursor: pointer;
+input {
+  width: 50%;
+  padding: 5px 10px;
+  margin: 0px 0;
+  border: 2px solid #9555af;
+  border-radius: 25px;
 }
-
-.delete-btn:hover {
-  color: red;
+.add-btn {
+  /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 4px;
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+  /* make sure colors have enough contrast! */
+  color: #ffffff;
+  background-color: #9555af;
+  border-radius: 25px;
+}
+.add-btn:hover,
+.add-btn:focus {
+  color: #9555af;
+  border-color: currentColor;
+  background-color: white;
+}
+.add-btn {
+  outline: none;
+}
+.add-btn::-moz-focus-inner {
+  border: none;
+}
+.delete-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  background-color: #9555af;
+  border-radius: 25px;
+}
+.delete-btn:hover,
+.delete-btn:focus {
+  color: #fff;
+  border-color: currentColor;
+  background-color: red;
+}
+.delete-btn {
+  outline: none;
+}
+.delete-btn::-moz-focus-inner {
+  border: none;
 }
 </style>
