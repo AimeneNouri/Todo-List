@@ -60,7 +60,6 @@ body {
 }
 #todolistapp {
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -87,6 +86,7 @@ input {
   margin: 0px 0;
   border: 2px solid #9555af;
   border-radius: 25px;
+  outline: none;
 }
 .add-btn {
   display: inline-block;
